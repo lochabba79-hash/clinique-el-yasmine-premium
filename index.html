@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>عيادة الياسمين — حيدرة، الجزائر | Clinique El Yasmine</title>
+  <meta name="description" content="عيادة الياسمين بحيدرة، الجزائر — طب عام، قلب، أسنان، تحاليل بنتائج نفس اليوم. احجز عبر واتساب." />
+  <meta name="theme-color" content="#FAF5EB" />
+  <meta property="og:title" content="عيادة الياسمين — حيدرة، الجزائر" />
+  <meta property="og:description" content="طب بطابع عائلي من قلب حيدرة. احجز موعدك عبر واتساب." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=70&auto=format&fit=crop" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=70&auto=format&fit=crop" />
+  <link rel="canonical" href="https://clinique-elyasmine.dz/" />
+  <!-- TODO analytics: <script defer data-domain="lochabba79-hash.github.io" src="https://plausible.io/js/script.js"></script> -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"MedicalClinic","name":"عيادة الياسمين — حيدرة",
+   "address":{"@type":"PostalAddress","streetAddress":"12 Rue Didouche Mourad, Hydra","addressLocality":"Alger","postalCode":"16035","addressCountry":"DZ"},
+   "telephone":"+21323456789","openingHours":["Sa-Th 08:00-18:00","Fr 08:00-12:00"],"priceRange":"DZD",
+   "description":"نموذج عرض تجريبي — طب عام، قلب، أسنان، مخبر."}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#s1" data-i18n="skip">تخطَّ إلى المحتوى</a>
+  <div class="progress" id="progress"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <span class="brand__mark"><i class="ph-light ph-plus-circle"></i></span>
+      <span class="brand__name">عيادة الياسمين <small data-i18n="brandSub">حيدرة · الجزائر</small></span>
+    </a>
+    <nav class="nav" id="nav" data-i18n-attr="aria-label" data-i18n="navLabel" aria-label="أقسام الصفحة">
+      <button data-goto="0" data-i18n="nav0">الاستقبال</button>
+      <button data-goto="1" data-i18n="nav1">الفحص</button>
+      <button data-goto="2" data-i18n="nav2">المتابعة</button>
+      <button data-goto="3" data-i18n="nav3">احجز</button>
+      <button data-goto="4" data-i18n="nav4">الحزمة</button>
+    </nav>
+    <button class="langtoggle" id="langToggle" aria-label="Français / العربية">FR</button>
+    <button class="themetoggle" id="themeToggle" data-i18n-attr="aria-label" data-i18n="themeToggle" aria-label="تبديل المظهر"><i class="ph-light ph-moon"></i></button>
+    <a class="topcta" href="https://wa.me/213550123456?text=%D8%A3ريد%20حجز%20موعد" target="_blank" rel="noopener">
+      <i class="ph-light ph-whatsapp-logo"></i> <span data-i18n="book">احجز موعد</span>
+    </a>
+  </header>
+
+  <!-- Pinned cinematic stage: 5 scenes, one continuous warm journey (remote photos, progressive load). -->
+  <div class="stage" id="stage" aria-hidden="true">
+    <div class="scene is-active" data-scene="0">
+      <div class="scene__visual scene__visual--reception"><span class="scene__arch"></span></div>
+      <img class="scene__photo" data-photo="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=70&auto=format&fit=crop" data-photo-sm="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=60&auto=format&fit=crop" data-alt-ar="قاعة انتظار مضيئة في العيادة" data-alt-fr="Salle d'attente lumineuse" alt="قاعة انتظار مضيئة في العيادة" fetchpriority="high" />
+      <div class="scene__grain"></div>
+    </div>
+    <div class="scene" data-scene="1">
+      <div class="scene__visual scene__visual--exam"><span class="scene__arch scene__arch--window"></span></div>
+      <img class="scene__photo" data-photo="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=70&auto=format&fit=crop" data-photo-sm="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=60&auto=format&fit=crop" data-alt-ar="طبيب يفحص مريضا بعناية" data-alt-fr="Médecin examinant un patient" alt="طبيب يفحص مريضا بعناية" />
+      <div class="scene__grain"></div>
+    </div>
+    <div class="scene" data-scene="2">
+      <div class="scene__visual scene__visual--care"><span class="scene__arch scene__arch--lamp"></span></div>
+      <img class="scene__photo" data-photo="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600&q=70&auto=format&fit=crop" data-photo-sm="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=60&auto=format&fit=crop" data-alt-ar="متابعة ومرافقة المريض" data-alt-fr="Suivi et accompagnement du patient" alt="متابعة ومرافقة المريض" />
+      <div class="scene__grain"></div>
+    </div>
+    <div class="scene" data-scene="3">
+      <div class="scene__visual scene__visual--cta"><span class="scene__arch scene__arch--door"></span></div>
+      <img class="scene__photo" data-photo="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=70&auto=format&fit=crop" data-photo-sm="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=60&auto=format&fit=crop" data-alt-ar="مدخل العيادة بحيدرة" data-alt-fr="Entrée de la clinique à Hydra" alt="مدخل العيادة بحيدرة" />
+      <div class="scene__grain"></div>
+    </div>
+    <div class="scene" data-scene="4">
+      <div class="scene__visual scene__visual--premium"><span class="scene__arch scene__arch--seal"></span></div>
+      <img class="scene__photo" data-photo="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1600&q=70&auto=format&fit=crop" data-photo-sm="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&q=60&auto=format&fit=crop" data-alt-ar="تجهيزات طبية حديثة" data-alt-fr="Équipements médicaux modernes" alt="تجهيزات طبية حديثة" />
+      <div class="scene__grain"></div>
+    </div>
+    <div class="stage__veil"></div>
+  </div>
+
+  <aside class="route" id="route" data-i18n-attr="aria-label" data-i18n="routeLabel" aria-label="تقدم الرحلة">
+    <button class="is-active" data-goto="0"><span data-i18n="nav0">الاستقبال</span><i></i></button>
+    <button data-goto="1"><span data-i18n="nav1">الفحص</span><i></i></button>
+    <button data-goto="2"><span data-i18n="nav2">المتابعة</span><i></i></button>
+    <button data-goto="3"><span data-i18n="nav3">احجز</span><i></i></button>
+    <button data-goto="4"><span data-i18n="nav4">الحزمة</span><i></i></button>
+  </aside>
+
+  <div class="hint" id="hint"><span data-i18n="hint">مرّر للأسفل لاكتشاف العيادة</span><i></i></div>
+  <a class="stickycta" href="https://wa.me/213550123456?text=%D8%A3ريد%20حجز%20موعد" target="_blank" rel="noopener">
+    <i class="ph-light ph-whatsapp-logo"></i> <span data-i18n="book">احجز عبر واتساب</span>
+  </a>
+
+  <main id="top">
+    <!-- 01 / RECEPTION -->
+    <section class="copy" data-index="0" id="s1">
+      <span class="copy__num">01 / 05</span>
+      <h1 class="copy__title" data-i18n="heroTitle">طبٌّ بطابعٍ عائلي، <em>من قلب حيدرة</em></h1>
+      <p class="copy__body" data-i18n="heroBody">استقبال دافئ بالعربية والفرنسية، أسعار معلنة بالدينار، ونتائج تحاليل في نفس اليوم. هذه رحلتك داخل العيادة — مرّر لتكملها.</p>
+      <ul class="copy__tags">
+        <li><i class="ph-light ph-clock"></i><span data-i18n="tag0">السبت – الخميس 8–18 · الجمعة 8–12</span></li>
+        <li><i class="ph-light ph-map-pin"></i><span data-i18n="tag1">حيدرة، الجزائر</span></li>
+        <li><i class="ph-light ph-phone"></i><span data-i18n="tag2">CNAS · CIB · EDAHABIA مقبولة</span></li>
+      </ul>
+      <div class="copy__cta">
+        <a class="btn btn--primary" href="https://wa.me/213550123456?text=%D8%A3ريد%20حجز%20موعد" target="_blank" rel="noopener"><i class="ph-light ph-whatsapp-logo"></i> <span data-i18n="ctaWa">احجز عبر واتساب</span></a>
+        <a class="btn btn--ghost" href="#s2"><i class="ph-light ph-stethoscope"></i> <span data-i18n="ctaExam">اكتشف الفحص</span></a>
+      </div>
+      <ul class="copy__tags">
+        <li><i class="ph-light ph-shield-check"></i><span>فاتورة CNAS</span></li>
+        <li><i class="ph-light ph-credit-card"></i><span>CIB · EDAHABIA · نقداً</span></li>
+        <li><i class="ph-light ph-chats"></i><span>عربية · Français</span></li>
+      </ul>
+    </section>
+
+    <!-- 02 / EXAM + services -->
+    <section class="copy" data-index="1" id="s2">
+      <span class="copy__eyebrow" data-i18n="eb2">غرفة الفحص</span>
+      <h2 class="copy__title" data-i18n="t2">فحصٌ دقيق بلا استعجال</h2>
+      <p class="copy__body" data-i18n="b2">طبيب يستمع أولاً، تشخيص واضح بلغة تفهمها، وخطة علاج مكتوبة تأخذها معك. لا مصطلحات مبهمة، لا قرارات مستعجلة.</p>
+      <ul class="services">
+        <li><i class="ph-light ph-first-aid"></i><b data-i18n="svc0">استشارة عامة</b><span>2000 دج</span></li>
+        <li><i class="ph-light ph-heartbeat"></i><b data-i18n="svc1">قلب + تخطيط</b><span>4000 دج</span></li>
+        <li><i class="ph-light ph-tooth"></i><b data-i18n="svc2">تنظيف أسنان</b><span>3500 دج</span></li>
+      </ul>
+      <p class="note" data-i18n="svcNote">أسعار معلنة بالدينار — فاتورة CNAS لكل استشارة.</p>
+    </section>
+
+    <!-- 03 / CARE + FAQ -->
+    <section class="copy" data-index="2" id="s3">
+      <span class="copy__eyebrow" data-i18n="eb3">الرعاية والمتابعة</span>
+      <h2 class="copy__title" data-i18n="t3">نرافقك بعد أن تغادر</h2>
+      <p class="copy__body" data-i18n="b3">رسالة متابعة بعد كل زيارة، تذكير بموعد المراجعة، وخط مفتوح لأي سؤال. الشفاء رحلة — ونحن معك فيها خطوة بخطوة.</p>
+      <div class="faq">
+        <details>
+          <summary data-i18n="fq0">هل أحتاج موعداً مسبقاً؟</summary>
+          <p data-i18n="fa0">الطب العام والحالات المستعجلة الخفيفة بدون موعد (8–18، الجمعة 8–12). القلب والأسنان والإيكو بالحجز عبر واتساب.</p>
+        </details>
+        <details>
+          <summary data-i18n="fq1">ماذا أُحضر معي في أول زيارة؟</summary>
+          <p data-i18n="fa1">بطاقة التعريف، وصفاتك وتحاليلك السابقة إن وجدت، وقائمة الأدوية التي تتناولها حالياً.</p>
+        </details>
+        <details>
+          <summary data-i18n="fq2">كيف تتم المتابعة بعد الفحص؟</summary>
+          <p data-i18n="fa2">رسالة واتساب خلال 48 ساعة، تذكير بموعد المراجعة، وملف صحي واحد يجمع كل زياراتك.</p>
+        </details>
+        <details>
+          <summary data-i18n="fq3">كيف أدفع؟ وهل يمكن الإلغاء؟</summary>
+          <p data-i18n="fa3">نقداً أو عبر CIB / EDAHABIA بعد الاستشارة، مع فاتورة للتعويض CNAS. الإلغاء مجاني برسالة قبل الموعد بـ 24 ساعة.</p>
+        </details>
+        <details>
+          <summary data-i18n="fq4">هل تتعاملون مع CNAS؟</summary>
+          <p data-i18n="fa4">نعم، فاتورة مفصلة صالحة للتعويض، ونساعدك في تجهيز ملف الضمان الاجتماعي.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 04 / BOOKING -->
+    <section class="copy" data-index="3" id="s4">
+      <span class="copy__eyebrow" data-i18n="eb4">الخطوة الأخيرة</span>
+      <h2 class="copy__title" data-i18n="t4">موعدك على بُعد رسالة واحدة</h2>
+      <p class="copy__body" data-i18n="b4">املأ بياناتك، اختر اليوم والفترة، ثم أكّد عبر واتساب — نرد عليك خلال ساعات العمل.</p>
+      <div class="book" id="book" aria-live="polite">
+        <div class="book__row">
+          <div class="book__field">
+            <label for="bkName" data-i18n="bkName">الاسم الكامل</label>
+            <input id="bkName" name="name" type="text" autocomplete="name" required minlength="3" data-i18n-ph="bkNamePh" placeholder="مثال: أمين بن علي" />
+          </div>
+          <div class="book__field">
+            <label for="bkPhone" data-i18n="bkPhone">رقم الهاتف</label>
+            <input id="bkPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required pattern="0[567][0-9]{8}" title="05 / 06 / 07 + 8 أرقام" placeholder="0550 00 00 00" dir="ltr" />
+          </div>
+        </div>
+        <div class="book__field">
+          <label for="bkReason" data-i18n="bkReason">سبب الزيارة</label>
+          <select id="bkReason">
+            <option data-i18n="rs0">استشارة عامة</option>
+            <option data-i18n="rs1">فحص شامل</option>
+            <option data-i18n="rs2">متابعة</option>
+            <option data-i18n="rs3">أخرى</option>
+          </select>
+        </div>
+        <p class="book__label" data-i18n="bkDay">اختر اليوم</p>
+        <div class="book__pills" id="bookDays" role="group" aria-label="يوم الموعد">
+          <button type="button" class="is-sel" aria-pressed="true">السبت</button>
+          <button type="button">الأحد</button>
+          <button type="button">الاثنين</button>
+          <button type="button">الثلاثاء</button>
+          <button type="button">الأربعاء</button>
+          <button type="button">الخميس</button>
+          <button type="button">الجمعة</button>
+        </div>
+        <p class="book__label" data-i18n="bkTime">اختر الفترة</p>
+        <div class="book__pills" id="bookTimes" role="group" aria-label="فترة الموعد">
+          <button type="button" class="is-sel" aria-pressed="true">صباحاً · 8–12</button>
+          <button type="button">مساءً · 13–18</button>
+        </div>
+        <p class="book__err" id="bookErr" role="alert" hidden></p>
+        <a class="btn btn--primary btn--wide" id="bookGo" href="https://wa.me/213550123456?text=%D8%AD%D8%AC%D8%B2" target="_blank" rel="noopener">
+          <i class="ph-light ph-whatsapp-logo"></i><span id="bookGoText">تأكيد: السبت صباحاً</span>
+        </a>
+        <p class="note"><span data-i18n="bkOrCall">أو اتصل مباشرة:</span> <a href="tel:+21323456789" dir="ltr">023 45 67 89</a></p>
+      </div>
+      <footer class="foot" data-i18n="foot">عيادة الياسمين — حيدرة، الجزائر · نموذج عرض تجريبي</footer>
+    </section>
+    <!-- 05 / PREMIUM PACKAGE -->
+    <section class="copy" data-index="4" id="s5">
+      <span class="copy__eyebrow" data-i18n="eb5">الحزمة المميزة</span>
+      <h2 class="copy__title" id="premiumTitle">اشترِ راحتك مرة واحدة — باقة الياسمين المميزة</h2>
+      <p class="copy__body" data-i18n="pb5">استشارة 90 دقيقة + تحاليل مخبرية كاملة + 3 متابعات + ملف صحي. كل ما تحتاجه للسنة القادمة في حزمة واحدة — بسعر الإطلاق.</p>
+      <p class="countdown"><i class="ph-light ph-timer"></i><span data-i18n="cdLabel">عرض الإطلاق ينتهي نهاية هذا الشهر — المتبقي:</span> <b id="cdDays"></b></p>
+      <ul class="services services--4">
+        <li><i class="ph-light ph-warning"></i><b data-i18n="v0t">تكلفة الإهمال</b><span data-i18n="v0b">مضاعفات وزيارات طارئة قد تتجاوز 5000 دج في 6 أشهر</span></li>
+        <li><i class="ph-light ph-check-circle"></i><b data-i18n="v1t">ماذا تشمل</b><span data-i18n="v1b">فحص شامل + ملف موحد + خط مفتوح + جلسة مجانية إن لم تتحسن</span></li>
+        <li><i class="ph-light ph-chart-bar"></i><b data-i18n="v2t">السعر بشفافية</b><span data-i18n="v2b">القيمة 24000 دج — سعرك 9900 دج (عرض إطلاق)</span></li>
+        <li><i class="ph-light ph-users"></i><b data-i18n="v3t">لمن تناسب</b><span data-i18n="v3b">فوق 40، تاريخ عائلي، إرهاق مستمر، آخر فحص منذ 2+ سنة</span></li>
+      </ul>
+      <div class="price">
+        <div class="price__row"><span data-i18n="prVal">القيمة الفعلية</span><s>24000 دج</s></div>
+        <div class="price__row price__row--big"><span data-i18n="prNow">سعرك اليوم</span><b>9900 دج</b></div>
+        <div class="price__pay">
+          <span data-i18n="prPay">نقداً · CIB · EDAHABIA · أو 3 دفعات (3300×3) بدون فائدة</span>
+        </div>
+      </div>
+      <div class="quiz" id="quiz">
+        <p class="book__label" data-i18n="qzTitle">أجب بـ نعم / لا — نرى إن كانت الحزمة لك</p>
+        <div class="quiz__q"><span data-i18n="qz0">عمرك 40 سنة أو أكثر؟</span><div class="book__pills" data-quiz="0"><button type="button" data-v="1" data-i18n="ynY">نعم</button><button type="button" data-v="0" data-i18n="ynN">لا</button></div></div>
+        <div class="quiz__q"><span data-i18n="qz1">تاريخ عائلي (ضغط، سكري) أو إرهاق مستمر؟</span><div class="book__pills" data-quiz="1"><button type="button" data-v="1" data-i18n="ynY">نعم</button><button type="button" data-v="0" data-i18n="ynN">لا</button></div></div>
+        <div class="quiz__q"><span data-i18n="qz2">آخر فحص شامل منذ سنتين أو أكثر؟</span><div class="book__pills" data-quiz="2"><button type="button" data-v="1" data-i18n="ynY">نعم</button><button type="button" data-v="0" data-i18n="ynN">لا</button></div></div>
+        <p class="quiz__res" id="quizRes" aria-live="polite"></p>
+      </div>
+      <div class="testi">
+        <span class="sampletag" data-i18n="tsTag">شهادة تجريبية — تُستبدل بشهادة حقيقية</span>
+        <p data-i18n="tsBody">"الفحص الشامل كشف مستوى سكر خفي — الحمد لله اكتشفناه بدري. من غير هذه الحزمة كنت سأنتظر حتى تتفاقم الأمور."</p>
+        <p class="testi__who"><span data-i18n="tsWho">ن. م. · 47 سنة</span><span class="testi__stars" aria-label="5/5">★★★★★</span></p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary data-i18n="pq0">لماذا 1000 دج فقط؟ ما المقابل الخفي؟</summary>
+          <p data-i18n="pa0">لا مقابل خفي: عرض إطلاق لبناء الثقة. السعر الكامل 24000 دج سيُطبق بعد انتهاء العرض.</p>
+        </details>
+        <details>
+          <summary data-i18n="pq1">90 دقيقة طويلة — هل سأملّ؟</summary>
+          <p data-i18n="pa1">الطول من الشمولية لا من البطء: فحص كامل + شرح + خطة مكتوبة تغادر بها. لا غموض.</p>
+        </details>
+        <details>
+          <summary data-i18n="pq2">ملفي الرقمي — ماذا عن الخصوصية؟</summary>
+          <p data-i18n="pa2">ملفك مشفّر ولا يطّلع عليه إلا أنت وطبيبك. يمكن حفظ نسخة محلية لديك متى شئت.</p>
+        </details>
+      </div>
+      <div class="copy__cta">
+        <a class="btn btn--primary btn--wide" id="packGo" href="https://wa.me/213550123456?text=%D8%AD%D8%B2%D9%85%D8%A9" target="_blank" rel="noopener"><i class="ph-light ph-whatsapp-logo"></i> <span data-i18n="packCta">اختر موعدك الآن — 30 ثانية عبر واتساب</span></a>
+      </div>
+    </section>
+  </main>
+
+  <script src="scroll.js"></script>
+</body>
+</html>
